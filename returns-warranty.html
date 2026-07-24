@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Returns & Warranty — TechKitch</title>
+<meta name="description" content="TechKitch returns, replacement, and warranty policy." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+<style>
+  .policy-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 24px;
+  }
+  .policy-header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .policy-header h1 {
+    font-size: 2.75rem;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .policy-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow-sm);
+  }
+  .policy-card h2 {
+    font-size: 1.5rem;
+    color: var(--navy);
+    margin-top: 0;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .policy-card h2::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 24px;
+    background: var(--teal);
+    border-radius: var(--radius-sm);
+  }
+  .policy-card p {
+    color: var(--ink);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .policy-card ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .policy-card li {
+    color: var(--ink);
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+  .highlight-box {
+    background: var(--surface-2);
+    border-left: 4px solid var(--coral);
+    padding: 16px;
+    border-radius: var(--radius-sm);
+    margin-top: 16px;
+  }
+  .highlight-box p {
+    margin: 0;
+    font-weight: 500;
+  }
+  .contact-section {
+    text-align: center;
+    background: var(--navy);
+    color: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: 40px 24px;
+    margin-top: 48px;
+  }
+  .contact-section h3 {
+    color: var(--surface);
+    font-size: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+  .contact-section p {
+    color: var(--surface-2);
+    opacity: 0.9;
+    max-width: 500px;
+    margin: 0 auto 24px auto;
+  }
+
+  @media (max-width: 860px) {
+    .policy-header h1 {
+      font-size: 2.2rem;
+    }
+    .policy-card {
+      padding: 24px 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span class="tk-tech">Tech</span><span class="tk-kitch">Kitch</span></a>
+    <button class="nav-toggle js-nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <nav class="nav js-nav">
+      <a href="index.html">Shop</a>
+      <a href="index.html#shop">Categories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="js-open-cart">Cart</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="icon-btn js-open-cart" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
+        <span class="cart-badge js-cart-count">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="policy-container">
+
+    <div class="policy-header">
+      <h1>Returns & Warranty</h1>
+      <p style="color:var(--muted)">We want you to love your tech. If something isn't right, we've got you covered.</p>
+    </div>
+
+    <div class="policy-card">
+      <h2>7-Day Replacement Warranty</h2>
+      <p>All tech products purchased from TechKitch come with a standard <strong>7-Day Replacement Warranty</strong> starting from the day of delivery. If your device exhibits any manufacturing defects or operational issues, we will replace it free of charge.</p>
+      <div class="highlight-box">
+        <p>⚠️ Note: This warranty strictly covers functional and factory defects only. Physical damage, water exposure, or burns are not covered.</p>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <h2>Conditions for Returns</h2>
+      <p>To qualify for a successful return or replacement, please ensure the following criteria are met:</p>
+      <ul>
+        <li>The product must be in its original, undamaged packaging.</li>
+        <li>All included accessories, manuals, box inserts, and free gifts must be returned complete.</li>
+        <li>The serial number or IMEI must match our official sales logs.</li>
+        <li>Proof of purchase (invoice or order confirmation ID) must be provided.</li>
+        <li>⚠️ An unboxing video (without any cuts) must be provided to claim the warranty.</li>
+      </ul>
+    </div>
+
+    <div class="policy-card">
+      <h2>Refund Process</h2>
+      <p>If a replacement for your exact product is currently out of stock, we will automatically issue a full refund instead.</p>
+      <p>Once our technical team inspects and approves the returned product, your refund will be processed back to your original payment method (bKash/Nagad/Bank Transfer) within <strong>3-5 working days</strong>.</p>
+    </div>
+
+    <div class="contact-section">
+      <h3>Need to file a claim?</h3>
+      <p>Our support team is ready to help you sort it out quickly. Contact us with your Order ID and a short video clip of the defect.</p>
+      <a href="mailto:allsupport247@gmail.com" class="btn btn--primary" style="background: var(--coral); border-color: var(--coral); color: white; display: inline-block;">Contact Support</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="logo"><span class="tk-tech">Tech</span><span class="tk-kitch">Kitch</span></a>
+        <p>Good tech, zero fluff. We curate high-performing, long-lasting gear for daily setups.</p>
+      </div>
+      <div>
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="index.html#shop">All products</a></li>
+          <li><a href="cart.html">View cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Support</h5>
+        <ul>
+          <li><a href="returns-warranty.html" style="color: var(--coral);">Returns &amp; warranty</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About TechKitch</a></li>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 TechKitch. All rights reserved.</span>
+      <span>Made for people who just want good tech.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="drawer.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

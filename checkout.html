@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Checkout — TechKitch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span class="tk-tech">Tech</span><span class="tk-kitch">Kitch</span></a>
+    <button class="nav-toggle js-nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <nav class="nav js-nav">
+      <a href="index.html">Shop</a>
+      <a href="index.html#shop">Categories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="js-open-cart">Cart</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="icon-btn js-open-cart" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
+        <span class="cart-badge js-cart-count">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <div class="js-checkout-form-view">
+    <div class="page-head">
+      <p class="breadcrumb"><a href="index.html">Shop</a> / <a href="cart.html">Cart</a> / Checkout</p>
+      <h1>Checkout</h1>
+    </div>
+
+    <div class="checkout-layout js-checkout-layout">
+      <div>
+        <form class="js-checkout-form" novalidate>
+          <div class="form-card">
+            <h3>Shipping details</h3>
+            <p class="hint">We'll use this to deliver your order and send updates.</p>
+            <div class="form-grid">
+              <div class="field full">
+                <label for="fullName">Full name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" required />
+                <span class="field-error">Please enter your full name.</span>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="jane@email.com" required />
+                <span class="field-error">Enter a valid email address.</span>
+              </div>
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+880 1XX XXX XXXX" required />
+                <span class="field-error">Enter a valid phone number.</span>
+              </div>
+              <div class="field full">
+                <label for="address">Street address</label>
+                <input type="text" id="address" name="address" placeholder="House, road, area" required />
+                <span class="field-error">Enter your street address.</span>
+              </div>
+              <div class="field">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Dhaka" required />
+                <span class="field-error">Enter your city.</span>
+              </div>
+              <div class="field">
+                <label for="zip">ZIP / Postal code</label>
+                <input type="text" id="zip" name="zip" placeholder="1207" required />
+                <span class="field-error">Enter a valid postal code.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h3>Payment method</h3>
+            <p class="hint">Choose how you'd like to pay for this order.</p>
+            <div class="pay-options">
+              <label class="pay-option">
+                <input type="radio" name="payment" value="Cash On Delivery" checked />
+                <div><strong>Cash On Delivery</strong><div style="font-size:0.82rem;color:var(--muted);">Pay cash upon delivery</div></div>
+              </label>
+              <label class="pay-option">
+                <input type="radio" name="payment" value="bKash / Nagad" />
+                <div><strong>bKash / Nagad</strong><div style="font-size:0.82rem;color:var(--muted);">Pay via Mobile Banking</div></div>
+              </label>
+              <label class="pay-option">
+                <input type="radio" name="payment" value="Card Payment" />
+                <div><strong>Credit / Debit Card</strong><div style="font-size:0.82rem;color:var(--muted);">Pay via Visa, MasterCard or Amex</div></div>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full" style="padding:16px;">Place order</button>
+        </form>
+      </div>
+
+      <div class="summary-card">
+        <h3>Order summary</h3>
+        <div class="js-checkout-summary"></div>
+      </div>
+    </div>
+
+    <div class="empty-state js-checkout-empty" style="display:none;">
+      <h2>Your cart is empty</h2>
+      <p>Add something to your cart before checking out.</p>
+      <a href="index.html" class="btn btn--primary" style="margin-top:16px;">Start shopping</a>
+    </div>
+  </div>
+
+  <div class="order-confirm js-order-confirm" style="display:none;">
+    <div class="check-circle">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+    </div>
+    <h1>Order placed!</h1>
+    <p>Thanks for shopping with TechKitch. Redirecting to Facebook Messenger for order confirmation...</p>
+    <div class="order-id">Order <span class="js-order-id"></span></div>
+    <p style="color:var(--muted);">Total: <strong class="js-order-total"></strong> · Payment: <span class="js-order-method"></span></p>
+    <a href="index.html" class="btn btn--primary" style="margin-top:20px;">Continue shopping</a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2026 TechKitch. All rights reserved.</span>
+      <span>Made for people who just want good tech.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Cart drawer -->
+<div class="cart-drawer__backdrop js-drawer-backdrop"></div>
+<aside class="cart-drawer js-cart-drawer">
+  <div class="cart-drawer__head">
+    <h3 style="margin:0;">Your cart</h3>
+    <button class="js-drawer-close icon-btn" aria-label="Close cart" style="border:none;">✕</button>
+  </div>
+  <div class="cart-drawer__items js-drawer-items"></div>
+  <div class="cart-drawer__foot js-drawer-foot"></div>
+</aside>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="checkout.js"></script>
+<script src="drawer.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

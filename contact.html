@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us — TechKitch</title>
+<meta name="description" content="Get in touch with TechKitch support and sales team." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+<style>
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 48px;
+    margin: 40px auto 64px;
+    align-items: flex-start;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .contact-info h1 {
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+  }
+  .contact-info p.lead {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+  }
+  .info-card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .info-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 20px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+  }
+  .info-item .icon-box {
+    width: 44px;
+    height: 44px;
+    background: var(--surface-2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--teal);
+    flex-shrink: 0;
+  }
+  .info-item h4 {
+    margin: 0 0 4px 0;
+    font-size: 1rem;
+    color: var(--navy);
+  }
+  .info-item p {
+    margin: 0;
+    font-size: 0.92rem;
+    color: var(--muted);
+  }
+  .info-item a:hover {
+    color: var(--teal);
+    text-decoration: underline;
+  }
+
+  @media (max-width: 860px) {
+    .contact-layout {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+    .contact-info h1 {
+      font-size: 2.2rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span class="tk-tech">Tech</span><span class="tk-kitch">Kitch</span></a>
+    <button class="nav-toggle js-nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <nav class="nav js-nav">
+      <a href="index.html">Shop</a>
+      <a href="index.html#shop">Categories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="cart.html" class="js-open-cart">Cart</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="icon-btn js-open-cart" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
+        <span class="cart-badge js-cart-count">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="contact-layout">
+
+    <div class="contact-info">
+      <div>
+        <h1>Let's Connect</h1>
+        <p class="lead">Have a question about a product, shipping, or an order? Drop us a line and our tech experts will reply shortly via Messenger or Email.</p>
+      </div>
+
+      <div class="info-card-grid">
+        <div class="info-item">
+          <div class="icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <div>
+            <h4>Email Support</h4>
+            <p><a href="mailto:allsupport247@gmail.com">allsupport247@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <div>
+            <h4>Call Us</h4>
+            <p><a href="tel:+8801410420565" style="color:#FFFFFF; font-weight:600; text-decoration:none;">+8801410420565</a></p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <div>
+            <h4>HQ Office</h4>
+            <p>Palashbari, Baipal, Ashulia, Savar, Dhaka.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-card" style="margin-bottom: 0;">
+      <h3>Send a Message</h3>
+      <p class="hint" style="margin-bottom: 24px;">Fill out the form below and click Send Message to connect directly with us on Facebook Messenger.</p>
+
+      <form id="contactForm">
+        <div class="form-grid">
+          <div class="field">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" required placeholder="John" />
+          </div>
+          <div class="field">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" required placeholder="Doe" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" required placeholder="you@email.com" />
+        </div>
+
+        <div class="field">
+          <label for="phone">Mobile Number</label>
+          <input type="tel" id="phone" required placeholder="01XXXXXXXXX" />
+        </div>
+
+        <div class="field">
+          <label for="subject">Subject</label>
+          <select id="subject" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Order Issues & Shipping">Order Issues & Shipping</option>
+            <option value="Warranty Claims">Warranty Claims</option>
+            <option value="Product Information">Product Information</option>
+            <option value="Other / General Inquiry">Other / General Inquiry</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Your Message</label>
+          <textarea id="message" rows="5" required placeholder="Write your message here..." style="resize: vertical;"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--full" style="margin-top: 12px; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+          <svg style="width: 20px; height: 20px; fill: currentColor;" viewBox="0 0 24 24">
+            <path d="M12 2C6.477 2 2 6.145 2 11.258c0 2.91 1.452 5.51 3.727 7.185V22l3.418-1.875c.915.254 1.884.391 2.855.391 5.523 0 10-4.145 10-9.258C22 6.145 17.523 2 12 2zm1.09 12.38l-2.545-2.727-4.964 2.727 5.455-5.818 2.545 2.727 4.964-2.727-5.455 5.818z"/>
+          </svg>
+          Send Message via Messenger
+        </button>
+      </form>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="logo"><span class="tk-tech">Tech</span><span class="tk-kitch">Kitch</span></a>
+        <p>Good tech, zero fluff. We curate high-performing, long-lasting gear for daily setups.</p>
+      </div>
+      <div>
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="index.html#shop">All products</a></li>
+          <li><a href="cart.html">View cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Support</h5>
+        <ul>
+          <li><a href="returns-warranty.html">Returns &amp; warranty</a></li>
+          <li><a href="contact.html" style="color: var(--coral);">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About TechKitch</a></li>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 TechKitch. All rights reserved.</span>
+      <span>Made for people who just want good tech.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="drawer.js"></script>
+<script src="nav.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contactForm");
+  if (!form) return;
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const firstName = document.getElementById("firstName") ? document.getElementById("firstName").value.trim() : "";
+    const lastName = document.getElementById("lastName") ? document.getElementById("lastName").value.trim() : "";
+    const email = document.getElementById("email") ? document.getElementById("email").value.trim() : "";
+    const phone = document.getElementById("phone") ? document.getElementById("phone").value.trim() : "";
+    const subjectSelect = document.getElementById("subject");
+    const subject = subjectSelect && subjectSelect.selectedIndex >= 0 && subjectSelect.options[subjectSelect.selectedIndex] 
+      ? subjectSelect.options[subjectSelect.selectedIndex].text 
+      : "General Inquiry";
+    const message = document.getElementById("message") ? document.getElementById("message").value.trim() : "";
+
+    const messengerPageId = "61591512496468";
+
+    const text = `Hello TechKitch,
+
+I am submitting a message from your website contact form:
+Name: ${firstName} ${lastName}
+Email: ${email}
+Phone: ${phone}
+Subject: ${subject}
+
+Message:
+${message}`;
+
+    const messengerUrl = `https://m.me/${messengerPageId}?text=${encodeURIComponent(text)}`;
+    window.open(messengerUrl, "_blank");
+  });
+});
+</script>
+</body>
+</html>

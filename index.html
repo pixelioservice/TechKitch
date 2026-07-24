@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TechKitch — Tech that fits your everyday</title>
+<meta name="description" content="Shop laptops, audio, wearables, and smart home tech at TechKitch." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span class="tk-tech">Tech</span><span class="tk-kitch">Kitch</span></a>
+    <button class="nav-toggle js-nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <nav class="nav js-nav">
+      <a href="index.html" class="active">Shop</a>
+      <a href="index.html#shop">Categories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="js-open-cart">Cart</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="icon-btn js-open-cart" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
+        <span class="cart-badge js-cart-count">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <span class="hero-eyebrow">◆ New arrivals weekly</span>
+        <h1>Tech that fits your everyday.</h1>
+        <p class="lead">Carefully chosen laptops, audio, and smart home gear — tested for real life, priced without the markup games.</p>
+        <div class="hero-ctas">
+          <a href="#shop" class="btn btn--primary">Shop all products</a>
+          <a href="#shop" class="btn btn--outline">Browse categories</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>12k+</strong><span>Orders shipped</span></div>
+          <div><strong>4.8/5</strong><span>Average rating</span></div>
+          <div><strong>7-day</strong><span>Easy returns</span></div>
+        </div>
+      </div>
+
+     <div class="hero-visual">
+        <div class="hero-slider">
+          <img src="https://i.imgur.com/TwsE0MX.png" alt="Keyboard" class="slide active" />
+          <img src="https://i.postimg.cc/JhrB7Pzz/Screenshot-(305).png" alt="Hoco White Headphone" class="slide" />
+          <img src="https://i.postimg.cc/FKGGhT0R/Screenshot-(316).png" alt="Gaming Head Phone" class="slide" />
+          <img src="https://i.postimg.cc/Bvr764gR/Screenshot-20260712-191830-Chrome.jpg" alt="Turbo Fan" class="slide" />
+          <img src="https://i.postimg.cc/yN6Y3YgL/Screenshot-20260713-205355-Chrome.jpg" alt="Lamp Holder" class="slide" />
+          <img src="https://i.imgur.com/xoAhwSB.png" alt="Lamp Combo" class="slide" />
+        </div>
+
+        <div class="receipt-corner">
+          <span>10% Off</span>
+          <span>Limited Time Offer</span>
+        </div>
+     </div>
+
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="trust-strip">
+      <div class="trust-item">
+        <span class="icon-circle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></span>
+        <div><h4>Free shipping</h4><p>On orders over ৳2000</p></div>
+      </div>
+      <div class="trust-item">
+        <span class="icon-circle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></span>
+        <div><h4>Original Products</h4><p>Tested for quality</p></div>
+      </div>
+      <div class="trust-item">
+        <span class="icon-circle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 11-6.219-8.56"/></svg></span>
+        <div><h4>7 Days Warranty</h4><p>Manufacturing defect coverage</p></div>
+      </div>
+      <div class="trust-item">
+        <span class="icon-circle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg></span>
+        <div><h4>Secure checkout</h4><p>Cash or Mobile Banking</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section" id="shop">
+    <div class="section-head">
+      <div>
+        <h2>Shop all products</h2>
+        <p>Filter by category, search, or sort to find what you need.</p>
+      </div>
+    </div>
+
+    <div class="chip-row js-categories"></div>
+
+    <div class="shop-controls">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+        <input type="text" class="js-search" placeholder="Search products…" />
+      </div>
+      <select class="sort-select js-sort">
+        <option value="featured">Sort: Featured</option>
+        <option value="price-asc">Price: Low to high</option>
+        <option value="price-desc">Price: High to low</option>
+        <option value="name">Name: A–Z</option>
+      </select>
+    </div>
+
+    <p class="result-count js-result-count"></p>
+    <div class="product-grid js-product-grid"></div>
+    <p class="js-empty-state" style="display:none; text-align:center; color:var(--muted); padding:40px 0;">No products match your search.</p>
+  </section>
+
+  <section class="container section" id="about">
+    <div class="cta-band">
+      <div>
+        <h2>Get 10% off on your first order</h2>
+      </div>
+      <div class="cta-wrapper" style="text-align: center;">
+        <p class="hint" style="font-size: 1.1rem; color: #fff; font-weight: 600; margin-bottom: 6px;">
+          Never miss a drop!
+        </p>
+        <p style="color: rgba(255,255,255,0.8); margin: 0 0 20px 0; font-size: 0.95rem; line-height: 1.5;">
+          Follow & connect with us to get notified about New Arrivals and limited-time Offers.
+        </p>
+
+        <form class="cta-form" onsubmit="event.preventDefault(); window.open('https://facebook.com', '_blank');" style="max-width: 320px; margin: 0 auto;">
+          <button type="submit" class="btn btn--primary btn--full" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+            Follow Us on Facebook
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="logo"><span class="tk-tech">Tech</span><span class="tk-kitch">Kitch</span></a>
+        <p style="margin-top:12px;">Everyday tech, chosen carefully. Shipping across the country from our Dhaka warehouse.</p>
+      </div>
+      <div>
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="index.html#shop">All products</a></li>
+          <li><a href="index.html#shop">Categories</a></li>
+          <li><a href="cart.html">Your cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Support</h5>
+        <ul>
+          <li><a href="returns-warranty.html">Returns &amp; warranty</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About TechKitch</a></li>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 TechKitch. All rights reserved.</span>
+      <span>Made for people who just want good tech.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Quick view modal -->
+<div class="modal js-quickview">
+  <div class="modal__backdrop"></div>
+  <div class="modal__panel">
+    <button class="js-modal-close" aria-label="Close">✕</button>
+    <div class="quickview__grid js-qv-content"></div>
+  </div>
+</div>
+
+<!-- Cart drawer -->
+<div class="cart-drawer__backdrop js-drawer-backdrop"></div>
+<aside class="cart-drawer js-cart-drawer">
+  <div class="cart-drawer__head">
+    <h3 style="margin:0;">Your cart</h3>
+    <button class="js-drawer-close icon-btn" aria-label="Close cart" style="border:none;">✕</button>
+  </div>
+  <div class="cart-drawer__items js-drawer-items"></div>
+  <div class="cart-drawer__foot js-drawer-foot"></div>
+</aside>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="main.js"></script>
+<script src="drawer.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

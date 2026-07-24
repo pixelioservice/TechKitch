@@ -1,0 +1,6 @@
+{
+  "name": "TechKitch",
+  "description": "Mobile-friendly e-commerce store for tech gear, laptops, headphones, and accessories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

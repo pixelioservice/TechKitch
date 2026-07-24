@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Your Cart — TechKitch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span class="tk-tech">Tech</span><span class="tk-kitch">Kitch</span></a>
+    <button class="nav-toggle js-nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <nav class="nav js-nav">
+      <a href="index.html">Shop</a>
+      <a href="index.html#shop">Categories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="active js-open-cart">Cart</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="icon-btn js-open-cart" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
+        <span class="cart-badge js-cart-count">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-head">
+    <p class="breadcrumb"><a href="index.html">Shop</a> / Cart</p>
+    <h1>Your cart</h1>
+  </div>
+
+  <div class="cart-layout js-cart-layout">
+    <div style="overflow-x: auto;">
+      <table class="cart-table">
+        <thead>
+          <tr><th>Product</th><th>Price</th><th>Quantity</th><th>Total</th><th></th></tr>
+        </thead>
+        <tbody class="js-cart-table-body"></tbody>
+      </table>
+    </div>
+    <div class="summary-card">
+      <h3>Order summary</h3>
+      <div class="js-cart-summary"></div>
+    </div>
+  </div>
+
+  <div class="empty-state js-cart-empty" style="display:none;">
+    <h2>Your cart is empty</h2>
+    <p>Looks like you haven't added anything yet.</p>
+    <a href="index.html" class="btn btn--primary" style="margin-top:16px;">Start shopping</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2026 TechKitch. All rights reserved.</span>
+      <span>Made for people who just want good tech.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Cart drawer -->
+<div class="cart-drawer__backdrop js-drawer-backdrop"></div>
+<aside class="cart-drawer js-cart-drawer">
+  <div class="cart-drawer__head">
+    <h3 style="margin:0;">Your cart</h3>
+    <button class="js-drawer-close icon-btn" aria-label="Close cart" style="border:none;">✕</button>
+  </div>
+  <div class="cart-drawer__items js-drawer-items"></div>
+  <div class="cart-drawer__foot js-drawer-foot"></div>
+</aside>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="cart-page.js"></script>
+<script src="drawer.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

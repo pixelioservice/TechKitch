@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Us — TechKitch</title>
+<meta name="description" content="Learn more about TechKitch, our mission, and our values." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+<style>
+  .about-hero {
+    text-align: center;
+    padding: 60px 24px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .about-hero h1 {
+    font-size: 3.2rem;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .about-hero p.lead {
+    font-size: 1.2rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin: 48px auto;
+    align-items: center;
+  }
+  .about-content h2 {
+    font-size: 2rem;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .about-content p {
+    color: var(--ink);
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  .values-section {
+    background: var(--surface-2);
+    border-radius: var(--radius-lg);
+    padding: 48px 32px;
+    margin: 64px auto;
+  }
+  .values-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--navy);
+    margin-bottom: 32px;
+  }
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .value-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+  }
+  .value-card h3 {
+    color: var(--teal);
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+  }
+  .value-card p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media (max-width: 860px) {
+    .about-hero h1 {
+      font-size: 2.4rem;
+    }
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+    .values-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .values-section {
+      padding: 32px 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span class="tk-tech">Tech</span><span class="tk-kitch">Kitch</span></a>
+    <button class="nav-toggle js-nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <nav class="nav js-nav">
+      <a href="index.html">Shop</a>
+      <a href="index.html#shop">Categories</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="js-open-cart">Cart</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="icon-btn js-open-cart" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
+        <span class="cart-badge js-cart-count">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="about-hero">
+    <h1>About TechKitch</h1>
+    <p class="lead">Good tech, zero fluff. We curate high-performing, long-lasting gear designed to elevate your daily setup and workflow.</p>
+  </section>
+
+  <section class="about-grid">
+    <div class="about-content">
+      <h2>Our Story</h2>
+      <p>TechKitch was founded with a simple idea: tech shopping shouldn't be confusing. In a market flooded with overhyped specifications and low-quality knockoffs, we set out to build a clean, trusted kitchen—a "Kitch"—where only the finest, hand-picked tech items are served.</p>
+      <p>We don't believe in selling hundreds of identical, low-tier products. Instead, our team spends hours testing every single piece of hardware—from high-end ANC headphones to essential desktop gears—ensuring they deliver absolute performance before they ever make it onto our store catalog.</p>
+    </div>
+    <div class="form-card" style="margin: 0; padding: 32px; background: var(--navy); color: var(--surface);">
+      <h3 style="color: var(--coral); margin-top: 0;">Tested by Experts.</h3>
+      <p style="color: var(--surface-2); opacity: 0.9; line-height: 1.6;">Every product listed on TechKitch undergoes strict quality diagnostics. We benchmark battery life, sound curves, structural build durability, and overall daily reliability so you don't have to worry about lemons.</p>
+      <hr style="border-color: rgba(255,255,255,0.1); margin: 24px 0;">
+      <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--teal);">// TechKitch Quality Protocol: Passed</div>
+    </div>
+  </section>
+
+  <section class="values-section">
+    <h2>Our Core Commitments</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <h3>Strict Curation</h3>
+        <p>We only display products that meet high standards of performance. No filler gadgets, no compromise on quality.</p>
+      </div>
+      <div class="value-card">
+        <h3>Transparent Specs</h3>
+        <p>No exaggerated battery scores or fake reviews. You get exactly what is written in the product description blueprints.</p>
+      </div>
+      <div class="value-card">
+        <h3>Reliable Support</h3>
+        <p>Our 7-day hassle-free replacement warranty guarantees you never get stuck with a manufacturing defect.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="logo"><span class="tk-tech">Tech</span><span class="tk-kitch">Kitch</span></a>
+        <p>Good tech, zero fluff. We curate high-performing, long-lasting gear for daily setups.</p>
+      </div>
+      <div>
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="index.html#shop">All products</a></li>
+          <li><a href="cart.html">View cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Support</h5>
+        <ul>
+          <li><a href="returns-warranty.html">Returns &amp; warranty</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html" style="color: var(--coral);">About TechKitch</a></li>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 TechKitch. All rights reserved.</span>
+      <span>Made for people who just want good tech.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="drawer.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>
